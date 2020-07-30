@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13A7027D-DEDB-440C-A6CB-60A770F2270A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Login_System.My.MyApplication</StartupObject>
+    <RootNamespace>Login_System</RootNamespace>
+    <AssemblyName>Login System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Login System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Login System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>imageres.dll_I0052_0409.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allloanview.Designer.vb">
+      <DependentUpon>allloanview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="allloanview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allmemberview.Designer.vb">
+      <DependentUpon>allmemberview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="allmemberview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allreport.Designer.vb">
+      <DependentUpon>allreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="allreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.vb">
+      <DependentUpon>employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeView.Designer.vb">
+      <DependentUpon>employeeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employeeView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fdReg.Designer.vb">
+      <DependentUpon>fdReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fdReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDview.Designer.vb">
+      <DependentUpon>FDview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FDview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotPsw.Designer.vb">
+      <DependentUpon>forgotPsw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPsw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan.Designer.vb">
+      <DependentUpon>loan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loanview.Designer.vb">
+      <DependentUpon>loanview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loanview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportfd.Designer.vb">
+      <DependentUpon>reportfd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportfd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportloan.Designer.vb">
+      <DependentUpon>reportloan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportloan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportsb.Designer.vb">
+      <DependentUpon>reportsb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportsb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="savingsReg.Designer.vb">
+      <DependentUpon>savingsReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="savingsReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="memberView.Designer.vb">
+      <DependentUpon>memberView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="memberView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIcon.vb" />
+    <Compile Include="FormIcon1.vb" />
+    <Compile Include="memberReg.Designer.vb">
+      <DependentUpon>memberReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="memberReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainFrm.Designer.vb">
+      <DependentUpon>mainFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="savingView.Designer.vb">
+      <DependentUpon>savingView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="savingView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewallfd.Designer.vb">
+      <DependentUpon>viewallfd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewallfd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewallsavings.Designer.vb">
+      <DependentUpon>viewallsavings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="viewallsavings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="allloanview.resx">
+      <DependentUpon>allloanview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allmemberview.resx">
+      <DependentUpon>allmemberview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allreport.resx">
+      <DependentUpon>allreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeView.resx">
+      <DependentUpon>employeeView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fdReg.resx">
+      <DependentUpon>fdReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDview.resx">
+      <DependentUpon>FDview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPsw.resx">
+      <DependentUpon>forgotPsw.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan.resx">
+      <DependentUpon>loan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loanview.resx">
+      <DependentUpon>loanview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberView.resx">
+      <DependentUpon>memberView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="memberReg.resx">
+      <DependentUpon>memberReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainFrm.resx">
+      <DependentUpon>mainFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportfd.resx">
+      <DependentUpon>reportfd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportloan.resx">
+      <DependentUpon>reportloan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportsb.resx">
+      <DependentUpon>reportsb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="savingsReg.resx">
+      <DependentUpon>savingsReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="savingView.resx">
+      <DependentUpon>savingView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewallfd.resx">
+      <DependentUpon>viewallfd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewallsavings.resx">
+      <DependentUpon>viewallsavings.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slika-ključ.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boxeri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imageres.dll_I0052_0409.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
